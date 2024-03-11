@@ -1,0 +1,78 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+        <LinearLayout
+            style="@style/LayoutSettingsStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvNameSetting"
+                style="@style/tv_CardViewSettingsBlack"
+                android:layout_weight="1"
+                android:text="@string/tv_name_setting" />
+
+            <TextView
+                android:id="@+id/tvSetting"
+                style="@style/tv_CardViewSettingsGrey"
+                android:layout_weight="1"
+                tools:text="text" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/LayoutSettingsStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvQuantityTitle"
+                style="@style/tv_CardViewSettingsBlack"
+                android:layout_weight="1"
+                tools:text="@string/tv_amount" />
+
+            <TextView
+                android:id="@+id/tvQuantity"
+                style="@style/tv_CardViewSettingsGrey"
+                android:layout_weight="1"
+                tools:text="text" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/LayoutSettingsStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvCostsTitle"
+                style="@style/tv_CardViewSettingsBlack"
+                android:layout_weight="1"
+                tools:text="@string/tv_costs" />
+
+            <TextView
+                android:id="@+id/tvCosts"
+                style="@style/tv_CardViewSettingsGrey"
+                android:layout_weight="1"
+                tools:text="text" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_view"
+            android:layout_marginTop="@dimen/margin_view10"
+            android:background="@color/light_grey" />
+
+    </LinearLayout>
+

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.repair.lomasterapp.errors.ErrorInternetConnectionFragment">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/error_connection_start"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/error_connection_Top"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/error_connection_End"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.95" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/error_connection_Botton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.9" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/line1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.8" />
+
+    <ImageView
+        android:id="@+id/im_error_internet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/error_internet_connection"
+        app:layout_constraintEnd_toStartOf="@+id/error_connection_End"
+        app:layout_constraintStart_toEndOf="@id/error_connection_start"
+        app:layout_constraintTop_toTopOf="@+id/error_connection_Top"
+        app:layout_constraintBottom_toTopOf="@+id/tv_error_connection"/>
+
+    <TextView
+        android:id="@+id/tv_error_connection"
+        style="@style/TextViewStyleError"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_error_connection"
+        app:layout_constraintBottom_toTopOf="@+id/line1"
+        app:layout_constraintEnd_toStartOf="@+id/error_connection_End"
+        app:layout_constraintStart_toEndOf="@id/error_connection_start"
+        app:layout_constraintTop_toBottomOf="@+id/im_error_internet" />
+
+    <Button
+        android:id="@+id/btn_ok"
+        style="@style/TextButtonStyleWhite"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_green_selector"
+        android:text="@string/back"
+        app:layout_constraintBottom_toTopOf="@id/error_connection_Botton"
+        app:layout_constraintEnd_toStartOf="@+id/error_connection_End"
+        app:layout_constraintStart_toEndOf="@id/error_connection_start"
+        app:layout_constraintTop_toTopOf="@+id/line1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

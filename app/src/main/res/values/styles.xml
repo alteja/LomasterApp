@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="TitleBoldTextStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">left</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/font_small15</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextViewStyle1">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">left</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/font_small20</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="TextViewNewOrderGrey">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">left</item>
+        <item name="android:layout_marginStart">8dp</item>
+        <item name="android:layout_marginEnd">8dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:textColor">@color/middle_grey</item>
+        <item name="android:textSize">@dimen/font_small18</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="TextViewNewOrderBlack">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_marginStart">8dp</item>
+        <item name="android:layout_marginEnd">8dp</item>
+        <item name="android:textColor">@color/dark_grey</item>
+        <item name="android:textColorHint">@color/dark_grey</item>
+        <item name="android:textSize">@dimen/font_small18</item>
+
+    </style>
+
+    <style name="TextViewOldOrderGrey">
+
+        <item name="android:layout_gravity">left|center_vertical</item>
+        <item name="android:textColor">@color/middle_grey</item>
+        <item name="android:textSize">@dimen/font_small18</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:layout_marginEnd">5dp</item>
+    </style>
+
+    <style name="TextViewOldOrderBlack">
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:textColor">@color/dark_grey</item>
+        <item name="android:textColorHint">@color/black</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/font_small18</item>
+        <item name="android:layout_marginStart">10dp</item>
+    </style>
+
+
+    <style name="TextViewTitleOldOrder">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">left</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/font_small20</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="TextButtonStyleWhite">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/font_small18</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="TextViewStyleWhite">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:textSize">@dimen/font_small16</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="TextButtonStyleBlack">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/font_small18</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="TextViewStyle2">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">left</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/font_small18</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="TextViewStyle3">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">left</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/font_small15</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="TextViewStyleError">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">30dp</item>
+        <item name="android:layout_marginEnd">30dp</item>
+        <item name="android:gravity">center_vertical|center_horizontal</item>
+        <item name="android:textColor">@color/dark_grey</item>
+        <item name="android:textSize">@dimen/font_small15</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="EditTextStyleClient">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_horizontal|center_vertical</item>
+        <item name="android:textColor">@color/dark_grey</item>
+        <item name="android:textColorHint">@color/text_off_color</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/font_small20</item>
+        <item name="android:fontFamily">@font/roboto_light</item>
+    </style>
+
+    <style name="EditTextStyleClient2">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_horizontal|center_vertical</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textColorHint">@color/text_off_color</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/font_small20</item>
+        <item name="android:fontFamily">@font/roboto_light</item>
+    </style>
+
+    <style name="TextViewCapsStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/font_small18</item>
+        <item name="android:fontFamily">@font/roboto_light</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="TextViewStyleContacts">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/font_small18</item>
+        <item name="android:fontFamily">@font/roboto_light</item>
+    </style>
+
+    <style name="AppScrollStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:overScrollMode">never</item>
+        <item name="android:scrollbars">none</item>
+    </style>
+
+    <style name="CardViewStyle">
+        <item name="android:layout_marginTop">2dp</item>
+        <item name="android:layout_marginBottom">2dp</item>
+    </style>
+
+    <style name="tv_CardViewStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:textSize">@dimen/font_small15</item>
+    </style>
+
+    <style name="tv_CardViewStyle2">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/font_small15</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:paddingLeft">10dp</item>
+    </style>
+
+    <style name="tv_CardViewStyle3">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/font_small15</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="tv_CardViewSettingsBlack">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/font_small15</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="tv_CardViewSettingsGrey">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/font_small15</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/middle_grey</item>
+    </style>
+
+    <style name="LayoutSettingsStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textSize">@dimen/font_small15</item>
+        <item name="android:layout_margin">2dp</item>
+    </style>
+
+
+
+    <style name="tv_commonText">
+
+        <item name="android:textSize">@dimen/font_small20</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="tv_hyperlink">
+        <item name="android:textSize">@dimen/font_small15</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/color_green</item>
+    </style>
+
+
+</resources>

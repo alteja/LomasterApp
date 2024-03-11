@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/main_background"
+        tools:context="com.repair.lomasterapp.authorisation.AskCreateNewUserFragment">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/auth_content_start"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.05" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/auth_content_Top"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.1" />
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/line1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.95" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@id/auth_content_Top"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/line2"
+            app:srcCompat="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/tv_create_user"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="@string/question_new_user"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_small20"
+            app:layout_constraintBottom_toTopOf="@id/line3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/line2" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/line2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.35" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/line3"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.5" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/line4"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.65" />
+
+        <androidx.constraintlayout.helper.widget.Flow
+            android:id="@+id/flow_ask_authorisation"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:constraint_referenced_ids="btn_create_us_ok,btn_create_us_no"
+            app:flow_horizontalBias="0.1"
+            app:flow_horizontalGap="@dimen/margin_view5"
+            app:flow_horizontalStyle="spread"
+            app:flow_verticalGap="@dimen/margin_view5"
+            app:flow_verticalStyle="spread"
+            app:flow_wrapMode="none"
+            app:layout_constraintBottom_toTopOf="@+id/line4"
+            app:layout_constraintEnd_toEndOf="@id/line1"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/auth_content_start"
+            app:layout_constraintTop_toBottomOf="@+id/line3"
+            app:layout_constraintVertical_bias="0.489">
+
+
+        </androidx.constraintlayout.helper.widget.Flow>
+
+        <Button
+            android:id="@+id/btn_create_us_ok"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/small_button_green"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_small15"
+            android:textStyle="normal"
+            android:text="@string/create_user_ok"
+            app:layout_constraintStart_toStartOf="@+id/auth_content_start"
+            app:layout_constraintTop_toTopOf="@id/line3"
+
+            />
+
+        <Button
+            android:id="@+id/btn_create_us_no"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/small_button_white"
+            android:text="@string/create_user_no"
+            tools:layout_editor_absoluteX="208dp"
+            tools:layout_editor_absoluteY="293dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="MainFragmentViewModel"
+            type="com.repair.lomasterapp.mainScreens.MainFragmentViewModel" />
+    </data>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.repair.lomasterapp.mainScreens.MainFragment">
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/main_content_start"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/content_end"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.95" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/content_top2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.38" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/content_top5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.35" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/content_top"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.02" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/content_top4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/content_botton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.88" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/content_top3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.63" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/content_middle"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.48" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/content_middle2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.52" />
+
+    <ImageSwitcher
+        android:id="@+id/im_advertising"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/content_top5"
+        app:layout_constraintEnd_toEndOf="@+id/content_end"
+        app:layout_constraintStart_toStartOf="@+id/main_content_start"
+        app:layout_constraintTop_toTopOf="@+id/content_top4"
+        android:layout_gravity="center_horizontal"
+       />
+
+    <TextView
+        android:id="@+id/tv_name_main_screen"
+        style="@style/TextViewStyle3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/content_top4"
+        app:layout_constraintStart_toStartOf="@id/main_content_start"
+        app:layout_constraintTop_toBottomOf="@+id/content_top" />
+
+    <ImageButton
+        android:id="@+id/btn_open_client_info"
+        style="@style/Widget.AppCompat.ImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bi_person_circle"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@+id/content_top4"
+        app:layout_constraintEnd_toEndOf="@id/content_end"
+        app:layout_constraintTop_toBottomOf="@+id/content_top" />
+
+    <Button
+        android:id="@+id/btn_main_requests"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/button_my_orders_selector"
+        app:layout_constraintBottom_toBottomOf="@+id/content_top3"
+        app:layout_constraintEnd_toEndOf="@id/content_middle"
+        app:layout_constraintStart_toStartOf="@+id/main_content_start"
+        app:layout_constraintTop_toTopOf="@+id/content_top2" />
+
+
+    <Button
+        android:id="@+id/btn_main_new_request"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/button_create_order_selector"
+        app:layout_constraintBottom_toBottomOf="@+id/content_top3"
+        app:layout_constraintEnd_toEndOf="@id/content_end"
+        app:layout_constraintStart_toStartOf="@+id/content_middle2"
+        app:layout_constraintTop_toTopOf="@+id/content_top2" />
+
+    <Button
+        android:id="@+id/btn_main_call_lomaster"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/button_call_us_selector"
+        app:layout_constraintBottom_toBottomOf="@+id/content_botton"
+        app:layout_constraintEnd_toEndOf="@id/content_middle"
+        app:layout_constraintStart_toStartOf="@+id/main_content_start"
+        app:layout_constraintTop_toTopOf="@+id/content_top3" />
+
+    <Button
+        android:id="@+id/btn_main_search_lomaster"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/button_search_us_selector"
+        app:layout_constraintBottom_toBottomOf="@+id/content_botton"
+        app:layout_constraintEnd_toEndOf="@id/content_end"
+        app:layout_constraintStart_toStartOf="@+id/content_middle2"
+        app:layout_constraintTop_toTopOf="@+id/content_top3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

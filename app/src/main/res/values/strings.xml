@@ -1,3 +1,143 @@
 <resources>
-    <string name="app_name">LomasterApp</string>
+    <string name="app_name">LOMASTER</string>
+    <string name="title_authorisation">Авторизація</string>
+    <string name="button_ok">OK</string>
+    <string name="button_save">ЗБЕРЕГТИ</string>
+    <string name="part1NumberPhone">+380</string>
+    <string name="part2NumberPhone">(                )</string>
+
+    //registration/authorisation
+
+    <string name="question_new_user">Хочете створити обліковий запис?</string>
+    <string name="create_user_ok">Так</string>
+    <string name="create_user_no">Ні</string>
+    <string name="send_sms_title">Введіть код із смс</string>
+    <string name="error_kod_sms">Некоректний код смс</string>
+    <string name="empty_error_kod_sms">Не вказаний код з смс.</string>
+    <string name="send_sms_body">Код Lomaster для авторизації в додатку: </string>
+    <string name="succsessfull_sms">SMS відправлено! </string>
+    <string name="not_succsessfull_sms">SMS не відправлено! </string>
+
+    //error
+    <string name="text_something_happens">Щось пішло не так...</string>
+    <string name="error_filling_phone">Некоретно заповнений номер тел.</string>
+    <string name="error_filling_data_client">Заповніть всі поля.</string>
+    <string name="error_registration_client">Помилка реєстрації. Спробуйте ще раз.</string>
+    <string name="error_saving_client">Помилка збереження даних клієнта. Спробуйте ще раз.</string>
+    <string name="error_saving_order">Помилка збереження замовлення. Спробуйте ще раз.</string>
+
+
+    <string name="tv_hello_user">Вітаю, </string>
+    <string name="main_my_requests">Мої замовлення</string>
+    <string name="main_create_request">Створити замовлення</string>
+    <string name="main_call_lomaster">Зв\'язатись з нами</string>
+    <string name="main_search_lomaster">Як нас знайти</string>
+    <string name="add_personal_data">ПЕРСОНАЛЬНІ ДАНІ</string>
+    <string name="add_personal_data_registration">Реєстрація</string>
+    <string name="first_name">Прізвище</string>
+    <string name="client_name">Ім\'я</string>
+    <string name="client_sername">По батькові</string>
+    <string name="next">Далі</string>
+    <string name="coming">Увійти</string>
+    <string name="back">Назад</string>
+    <string name="btn_save">Зберегти</string>
+    <string name="new_client_add_contacts">ВАШІ КОНТАКТИ</string>
+    <string name="new_client_address">Адреса</string>
+    <string name="tv_my_requests">Мої замовлення</string>
+    <string name="btn_add_request">Додати</string>
+    <string name="PhoneNumber">Номер телефону</string>
+    <string name="client_info_new_req">Інформація клієнта</string>
+
+
+    //requests
+    <string name="client_info_fio_new_req">ФІО</string>
+    <string name="tv_date_order">Дата замовлення</string>
+    <string name="order_information">Загальна інформація:</string>
+    <string name="client_info_phone_new_req">Номер телефону</string>
+    <string name="client_info_email_new_req">email</string>
+    <string name="title_device_req">Виріб та несправності</string>
+    <string name="type_device_req">Тип пристрою</string>
+    <string name="serial_number_device_req">Серійний номер</string>
+    <string name="brand_device_req">Бренд</string>
+    <string name="model_device_req">Модель</string>
+    <string name="password_device_req">Пароль або графічний ключ</string>
+    <string name="defect_device_req">Несправність</string>
+    <string name="complaction_device_req">Комплектація</string>
+    <string name="is_quiqly_req">Терміново</string>
+    <string name="master_call_time_req">Час виклику мастера</string>
+    <string name="pay_order">Оплатити замовлення</string>
+    <string name="work_materials">Робота та матеріали</string>
+    <string name="orders_summ">Загальна сумма</string>
+    <string name="tv_order">Замовлення</string>
+
+    //enum classes
+    <string name="enum_new_device">б/у</string>
+    <string name="enum_old_device">новий</string>
+    <string name="tv_new_device_new_order">Стан пристрою</string>
+    <string name="tv_calendar_master_visit">Оберіть час та дату візиту мастера</string>
+    <string name="changing_time">Час</string>
+
+    //dates
+    <string name="date_hint">dd/mm/yy</string>
+    <string name="time_hint">00:00</string>
+
+    //chekingOrderBeforeSave
+    <string name="empty_fio">Не заповнені ФІО. Перейдіть до налаштувань користувача, заповніть.</string>
+    <string name="empty_email">Не заповнений email. Перейдіть до налаштувань користувача, заповніть.</string>
+    <string name="empty_phone">Не заповнений номер телефону. Перейдіть до налаштувань користувача, заповніть.</string>
+    <string name="empty_type_device">Вкажіть тип пристрою.</string>
+    <string name="empty_serial_number">Вкажіть серійний номер пристрою.</string>
+    <string name="empty_brand_device">Вкажіть бренд пристрою.</string>
+    <string name="empty_model_device">Вкажіть модель пристрою.</string>
+    <string name="empty_packagelist">Вкажіть комплектацію пристрою.</string>
+    <string name="empty_malfunction">Вкажіть несправність пристрою.</string>
+
+    //client fragment
+    <string name="personal_data">Персональні дані</string>
+    <string name="contacts_data">ВАШІ КОНТАКТИ</string>
+    <string name="hint_email">Електронна пошта</string>
+
+    //contacts
+    <string name="contacts_tv">Наші контакти</string>
+    <string name="phone_company1">+38 066 911 01 01</string>
+    <string name="phone_company2">+38 068 911 01 01</string>
+    <string name="phone_company3">+38 073 911 01 01</string>
+
+    <string name="tv_time_working">Ми працюємо</string>
+    <string name="tv_time_working_info">Пн-Пт: 9:00 - 19:00, <br />
+                                        Сб-Нд: 10:00 - 16:00, <br />
+                                        БЕЗ ВИХІДНИХ</string>
+
+    <string name="tv_address_contacts">За адресою</string>
+    <string name="tv_address_contacts_info">м.Черкаси, <br />
+                                            бульвар Шевченка 250, <br />
+                                            вхід з лівої сторони ТЦ "Транзит"</string>
+
+    <string name="tv_connect_us">Зв\'язатись з нами</string>
+
+    //errors
+    <string name="tv_error_connection">На вашому телефоні вимкнений інтернет.
+                                        Рекомендуємо ввікнути. В іншому випадку будуть
+                                        недоступні більшість з функцій додатку Lomaster.
+    </string>
+
+    <string name="tv_error_server_connection">Відсутнє підключення до серверу Lomaster. Деякі
+                                              функції в додатку будуть обмежені.
+    </string>
+    <string name="link_youtube">https://www.youtube.com/watch?v=b...</string>
+    <string name="tv_how_to_search">Як нас знайти</string>
+    <string name="tv_look_video">дивись у відео:</string>
+    <string name="tv_show_gmap">Або знайди нас на мапі:</string>
+    <string name="tv_link_gMap">https://g.page/LOMASTER-service?share</string>
+    <string name="tv_creating_new_order">СВОРЕННЯ ЗАМОВЛЕННЯ</string>
+    <string name="tv_status_order">Статус замовлення</string>
+    <string name="tv_settings_services">Робота та матеріали</string>
+    <string name="btn_change_date">Обрати дату</string>
+    <string name="tv_name_setting">Найменування</string>
+    <string name="tv_amount">Кількість</string>
+    <string name="tv_costs">Вартість</string>
+    <string name="maska_kod_sms">X - X - X - X</string>
+    <string name="tv_error_sms">Некоректний код SMS.</string>
+
+
 </resources>

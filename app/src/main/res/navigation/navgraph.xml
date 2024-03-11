@@ -1,6 +1,252 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/navgraph">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navgraph"
+    app:startDestination="@id/splashScreenFragment">
 
+    <fragment
+        android:id="@+id/splashScreenFragment"
+        android:name="com.repair.lomasterapp.authorisation.SplashScreenFragment"
+        android:label="splash_screen_fragment"
+        tools:layout="@layout/splash_screen_fragment" >
+        <action
+            android:id="@+id/action_splashScreenFragment_to_autorisationFragment"
+            app:destination="@id/autorisationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/autorisationFragment"
+        android:name="com.repair.lomasterapp.authorisation.AuthorisationFragment"
+        android:label="AutorisationFragment"
+        tools:layout="@layout/autorisation_fragment" >
+        <action
+            android:id="@+id/action_autorisationFragment_to_splashScreenFragment"
+            app:destination="@id/splashScreenFragment" />
+        <action
+            android:id="@+id/action_autorisationFragment_to_askCreateNewUser"
+            app:destination="@id/askCreateNewUser" />
+        <action
+            android:id="@+id/action_autorisationFragment_to_errorInternetConnectionFragment"
+            app:destination="@id/errorInternetConnectionFragment" />
+        <action
+            android:id="@+id/action_autorisationFragment_to_errorServerConnectionFragment"
+            app:destination="@id/errorServerConnectionFragment" />
+        <action
+            android:id="@+id/action_autorisationFragment_to_sendSMSFragment"
+            app:destination="@id/sendSMSFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/askCreateNewUser"
+        android:name="com.repair.lomasterapp.authorisation.AskCreateNewUserFragment"
+        android:label="AskCreateNewUser"
+        tools:layout="@layout/ask_create_new_user" >
+        <action
+            android:id="@+id/action_askCreateNewUser_to_autorisationFragment"
+            app:destination="@id/autorisationFragment" />
+        <action
+            android:id="@+id/action_askCreateNewUser_to_newClientInformationFragment"
+            app:destination="@id/newClientInformationFragment"
+            app:popUpTo="@id/askCreateNewUser"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_askCreateNewUser_to_mainFragment"
+            app:destination="@id/mainFragment"
+            app:popUpTo="@id/autorisationFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/newClientInformationFragment"
+        android:name="com.repair.lomasterapp.clients.NewClientInformationFragment"
+        android:label="NewClientInformationFragment"
+        tools:layout="@layout/new_client_fragment1">
+        <action
+            android:id="@+id/action_newClientInformationFragment_to_newClientContactsFragment"
+            app:destination="@id/newClientContactsFragment"
+            app:popUpTo="@id/newClientInformationFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_newClientInformationFragment_to_askCreateNewUser"
+            app:destination="@id/askCreateNewUser"
+            app:popUpTo="@id/autorisationFragment"
+            app:popUpToInclusive="true" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/newClientContactsFragment"
+        android:name="com.repair.lomasterapp.clients.NewClientContactsFragment"
+        android:label="NewClientContactsFragment"
+        tools:layout="@layout/new_client_fragment2">
+        <action
+            android:id="@+id/action_newClientContactsFragment_to_newClientInformationFragment"
+            app:destination="@id/newClientInformationFragment"
+            app:popUpTo="@id/newClientInformationFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_newClientContactsFragment_to_mainFragment"
+            app:destination="@id/mainFragment"
+            app:popUpTo="@id/autorisationFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.repair.lomasterapp.mainScreens.MainFragment"
+        android:label="MainFragment"
+        tools:layout="@layout/main_fragment">
+        <action
+            android:id="@+id/action_mainFragment_to_askCreateNewUser"
+            app:destination="@id/askCreateNewUser" />
+        <action
+            android:id="@+id/action_mainFragment_to_newRequestFragment"
+            app:destination="@id/newRequestFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_clientFragment"
+            app:destination="@id/clientFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_listOrdersFragment"
+            app:destination="@id/listOrdersFragment"
+            app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/action_mainFragment_to_companyContactFragment"
+            app:destination="@id/companyContactFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_companyContactFragment2"
+            app:destination="@id/companyContactFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_locationLomasterFragment"
+            app:destination="@id/locationLomasterFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/newRequestFragment"
+        android:name="com.repair.lomasterapp.orders.NewOrderFragment"
+        android:label="NewRequestFragment"
+        tools:layout="@layout/new_order_fragment">
+        <action
+            android:id="@+id/action_newRequestFragment_to_mainFragment"
+            app:destination="@id/mainFragment"
+            app:popUpTo="@id/mainFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_newRequestFragment_to_pickerDate"
+            app:destination="@id/CalendarDateFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/CalendarDateFragment"
+        android:name="com.repair.lomasterapp.calendarDate.CalendarDateFragment"
+        android:label="CalendarDateFragment"
+        tools:layout="@layout/calendar_date_fragment">
+        <action
+            android:id="@+id/action_CalendarDateFragment_to_newRequestFragment2"
+            app:destination="@id/newRequestFragment"
+            app:popUpTo="@id/newRequestFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/clientFragment"
+        android:name="com.repair.lomasterapp.clients.ClientFragment"
+        android:label="ClientFragment"
+        tools:layout="@layout/client_fragment">
+        <action
+            android:id="@+id/action_clientFragment_to_mainFragment"
+            app:destination="@id/mainFragment"
+            app:popUpTo="@id/mainFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/listOrdersFragment"
+        android:name="com.repair.lomasterapp.orders.ListOrdersFragment"
+        android:label="list_orders_fragment"
+        tools:layout="@layout/list_orders_fragment" >
+        <action
+            android:id="@+id/action_listOrdersFragment_to_mainFragment"
+            app:destination="@id/mainFragment"
+            app:popUpTo="@id/mainFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_listOrdersFragment_to_oldOrderFragment"
+            app:destination="@id/oldOrderFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/oldOrderFragment"
+        android:name="com.repair.lomasterapp.orders.OldOrderFragment"
+        android:label="old_order_fragment"
+        tools:layout="@layout/old_order_fragment" >
+        <action
+            android:id="@+id/action_oldOrderFragment_to_listOrdersFragment"
+            app:destination="@id/listOrdersFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:popUpTo="@id/listOrdersFragment"
+            app:popUpToInclusive="true" />
+        <argument
+            android:name="oldOrderId"
+            app:argType="integer"
+            android:defaultValue="-1" />
+    </fragment>
+    <fragment
+        android:id="@+id/companyContactFragment"
+        android:name="com.repair.lomasterapp.contacts_company.CompanyContactFragment"
+        android:label="CompanyContactFragment"
+        tools:layout="@layout/company_contact_fragment" >
+        <action
+            android:id="@+id/action_companyContactFragment_to_mainFragment"
+            app:destination="@id/mainFragment"
+            app:popUpTo="@id/mainFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/errorInternetConnectionFragment"
+        android:name="com.repair.lomasterapp.errors.ErrorInternetConnectionFragment"
+        android:label="ErrorInternetConnectionFragment"
+        tools:layout="@layout/error_internet_connection_fragment" >
+        <action
+            android:id="@+id/action_errorInternetConnectionFragment_to_autorisationFragment"
+            app:destination="@id/autorisationFragment"
+            app:popUpTo="@id/autorisationFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/errorServerConnectionFragment"
+        android:name="com.repair.lomasterapp.errors.ErrorServerConnectionFragment"
+        android:label="ErrorServerConnectionFragment"
+        tools:layout="@layout/error_server_connection_fragment">
+        <action
+            android:id="@+id/action_errorServerConnectionFragment_to_autorisationFragment"
+            app:destination="@id/autorisationFragment"
+            app:popUpTo="@id/autorisationFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_errorServerConnectionFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/locationLomasterFragment"
+        android:name="com.repair.lomasterapp.location_lomaster.LocationLomasterFragment"
+        android:label="LocationLomasterFragment"
+        tools:layout="@layout/location_lomaster_fragment">
+        <action
+            android:id="@+id/action_locationLomasterFragment_to_mainFragment"
+            app:destination="@id/mainFragment"
+            app:popUpTo="@id/mainFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/sendSMSFragment"
+        android:name="com.repair.lomasterapp.authorisation.SendSMSFragment"
+        android:label="SendSMSFragment"
+        tools:layout="@layout/send_message_fragment">
+        <action
+            android:id="@+id/action_sendSMSFragment_to_autorisationFragment"
+            app:destination="@id/autorisationFragment"
+            app:popUpTo="@id/autorisationFragment"
+            app:popUpToInclusive="true"/>
+        <action
+            android:id="@+id/action_sendSMSFragment_to_mainFragment"
+            app:destination="@id/mainFragment"
+            />
+        <argument
+            android:name="smsKod"
+            app:argType="integer" />
+    </fragment>
 </navigation>

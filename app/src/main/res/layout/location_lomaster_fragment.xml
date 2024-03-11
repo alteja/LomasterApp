@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.repair.lomasterapp.location_lomaster.LocationLomasterFragment">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/location_start"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.05" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/location_start1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.2" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/location_Top"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.05" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/location_Top2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.1" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/location_Top3"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.2" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/location_End"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.95" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/location_Botton"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.85" />
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/line1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.3" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/line7"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.4" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/line8"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.5" />
+
+        <TextView
+            android:id="@+id/tv_how_to_search"
+            style="@style/TextViewCapsStyle"
+            android:gravity="center_horizontal|center_vertical"
+            android:textColor="@color/dark_green"
+            android:text="@string/tv_how_to_search"
+            app:layout_constraintBottom_toTopOf="@+id/location_Top2"
+            app:layout_constraintEnd_toEndOf="@+id/location_End"
+            app:layout_constraintStart_toStartOf="@+id/location_start"
+            app:layout_constraintTop_toTopOf="@+id/location_Top" />
+
+        <TextView
+            android:id="@+id/tv_look_video"
+            style="@style/TextViewCapsStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_look_video"
+            app:layout_constraintBottom_toTopOf="@+id/location_Top3"
+            app:layout_constraintStart_toStartOf="@+id/location_start"
+            app:layout_constraintTop_toBottomOf="@+id/tv_how_to_search" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            app:layout_constraintBottom_toTopOf="@+id/line1"
+            app:layout_constraintEnd_toStartOf="@+id/location_start1"
+            app:layout_constraintStart_toStartOf="@+id/location_start"
+            app:layout_constraintTop_toTopOf="@+id/location_Top3"
+            app:srcCompat="@drawable/video_icon" />
+
+        <TextView
+            android:id="@+id/tv_link_youtube"
+            style="@style/tv_hyperlink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/link_youtube"
+            app:layout_constraintBottom_toBottomOf="@+id/line1"
+            app:layout_constraintEnd_toEndOf="@+id/location_End"
+            app:layout_constraintStart_toStartOf="@+id/location_start1"
+            app:layout_constraintTop_toTopOf="@+id/location_Top3" />
+
+        <TextView
+            android:id="@+id/tv_show_gMap"
+            style="@style/TextViewCapsStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_show_gmap"
+            app:layout_constraintBottom_toTopOf="@+id/line7"
+            app:layout_constraintStart_toStartOf="@+id/location_start"
+            app:layout_constraintTop_toTopOf="@+id/line1" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            app:layout_constraintBottom_toTopOf="@+id/line8"
+            app:layout_constraintEnd_toStartOf="@+id/location_start1"
+            app:layout_constraintStart_toStartOf="@+id/location_start"
+            app:layout_constraintTop_toTopOf="@+id/line7"
+            app:srcCompat="@drawable/location_icon" />
+
+        <TextView
+            android:id="@+id/tv_link_gMap"
+            style="@style/tv_hyperlink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_link_gMap"
+            app:layout_constraintBottom_toTopOf="@+id/line8"
+            app:layout_constraintEnd_toEndOf="@+id/location_End"
+            app:layout_constraintStart_toStartOf="@+id/location_start1"
+            app:layout_constraintTop_toTopOf="@+id/line7" />
+
+        <Button
+            android:id="@+id/btn_back_location"
+            style="@style/TextButtonStyleWhite"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_green_selector"
+            android:text="@string/back"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/location_End"
+            app:layout_constraintStart_toStartOf="@+id/location_start"
+            app:layout_constraintTop_toTopOf="@+id/location_Botton" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

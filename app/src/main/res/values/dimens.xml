@@ -1,0 +1,43 @@
+
+<resources>
+
+    //FONT SIZES
+
+    <dimen name="font_small10">10sp</dimen>
+    <dimen name="font_small13">13sp</dimen>
+    <dimen name="font_small15">15sp</dimen>
+    <dimen name="font_small16">16sp</dimen>
+    <dimen name="font_small18">18sp</dimen>
+    <dimen name="font_small20">20sp</dimen>
+
+    <dimen name="font_middle25">25sp</dimen>
+    <dimen name="font_middle">30sp</dimen>
+    <dimen name="font_middle35">35sp</dimen>
+    <dimen name="font_middle40">40sp</dimen>
+
+    <dimen name="font_btn">24sp</dimen>
+
+    //PERSENT GUIDLINE
+
+    //auth
+    <dimen name="guid_auth">16sp</dimen>
+
+    //MARGIN
+    <dimen name="margin_view10">10dp</dimen>
+    <dimen name="margin_view2">2dp</dimen>
+    <dimen name="margin_view3">3dp</dimen>
+    <dimen name="margin_view5">5dp</dimen>
+    <dimen name="margin_view8">8dp</dimen>
+    <dimen name="margin_view4">4dp</dimen>
+    <dimen name="margin_view15">15dp</dimen>
+    <dimen name="margin_view20">20dp</dimen>
+    <dimen name="margin_view65">65dp</dimen>
+
+    //PADDING
+    <dimen name="padding_view8">8dp</dimen>
+
+    //SIZE VIEW
+    <dimen name="size_view">1dp</dimen>
+
+
+</resources>

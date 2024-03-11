@@ -1,16 +1,71 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Kotlin work/LomasterApp/app/src/main/res/layout/activity_main.xml" value="0.12613981762917933" />
+        <entry key="..\:/Kotlin work/LomasterApp/app/src/main/res/drawable/button_back_selector.xml" value="0.2755208333333333" />
+        <entry key="..\:/Kotlin work/LomasterApp/app/src/main/res/drawable/button_call_us_selector.xml" value="0.2755208333333333" />
+        <entry key="..\:/Kotlin work/LomasterApp/app/src/main/res/drawable/button_create_order_selector.xml" value="0.2755208333333333" />
+        <entry key="..\:/Kotlin work/LomasterApp/app/src/main/res/drawable/button_green_selector.xml" value="0.2755208333333333" />
+        <entry key="..\:/Kotlin work/LomasterApp/app/src/main/res/drawable/button_my_orders_selector.xml" value="0.2755208333333333" />
+        <entry key="..\:/Kotlin work/LomasterApp/app/src/main/res/drawable/button_search_us_selector.xml" value="0.2755208333333333" />
+        <entry key="..\:/Kotlin work/LomasterApp/app/src/main/res/drawable/elphone.xml" value="0.2755208333333333" />
+        <entry key="..\:/Kotlin work/LomasterApp/app/src/main/res/drawable/icon_lomaster_background.xml" value="0.2755208333333333" />
+        <entry key="..\:/Kotlin work/LomasterApp/app/src/main/res/drawable/icon_vector_calendar.xml" value="0.2755208333333333" />
+        <entry key="..\:/Kotlin work/LomasterApp/app/src/main/res/drawable/phone_part.xml" value="0.2755208333333333" />
+        <entry key="..\:/Kotlin work/LomasterApp/app/src/main/res/drawable/small_button_green.xml" value="0.2755208333333333" />
+        <entry key="..\:/Kotlin work/LomasterApp/app/src/main/res/drawable/small_button_white.xml" value="0.2755208333333333" />
+        <entry key="..\:/Kotlin work/LomasterApp/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Kotlin work/LomasterApp/app/src/main/res/layout/ask_create_new_user.xml" value="0.264" />
+        <entry key="..\:/Kotlin work/LomasterApp/app/src/main/res/layout/autorisation_fragment.xml" value="0.264" />
+        <entry key="..\:/Kotlin work/LomasterApp/app/src/main/res/layout/calendar_date_fragment.xml" value="0.2734375" />
+        <entry key="..\:/Kotlin work/LomasterApp/app/src/main/res/layout/client_fragment.xml" value="0.264" />
+        <entry key="..\:/Kotlin work/LomasterApp/app/src/main/res/layout/company_contact_fragment.xml" value="0.264" />
+        <entry key="..\:/Kotlin work/LomasterApp/app/src/main/res/layout/error_internet_connection.xml" value="0.12613981762917933" />
+        <entry key="..\:/Kotlin work/LomasterApp/app/src/main/res/layout/error_internet_connection_fragment.xml" value="0.264" />
+        <entry key="..\:/Kotlin work/LomasterApp/app/src/main/res/layout/error_server_connection_fragment.xml" value="0.4" />
+        <entry key="..\:/Kotlin work/LomasterApp/app/src/main/res/layout/item_list_orders_fragment.xml" value="0.4" />
+        <entry key="..\:/Kotlin work/LomasterApp/app/src/main/res/layout/item_list_orders_fragment_desabled.xml" value="0.15625" />
+        <entry key="..\:/Kotlin work/LomasterApp/app/src/main/res/layout/item_list_orders_fragment_enabled.xml" value="0.15625" />
+        <entry key="..\:/Kotlin work/LomasterApp/app/src/main/res/layout/item_list_services_settings.xml" value="0.4" />
+        <entry key="..\:/Kotlin work/LomasterApp/app/src/main/res/layout/list_orders_fragment.xml" value="0.264" />
+        <entry key="..\:/Kotlin work/LomasterApp/app/src/main/res/layout/list_requests_fragment.xml" value="0.264" />
+        <entry key="..\:/Kotlin work/LomasterApp/app/src/main/res/layout/location_lomaster_fragment.xml" value="0.264" />
+        <entry key="..\:/Kotlin work/LomasterApp/app/src/main/res/layout/main_fragment.xml" value="0.264" />
+        <entry key="..\:/Kotlin work/LomasterApp/app/src/main/res/layout/main_fragnet.xml" value="0.264" />
+        <entry key="..\:/Kotlin work/LomasterApp/app/src/main/res/layout/new_client_fragment1.xml" value="0.259375" />
+        <entry key="..\:/Kotlin work/LomasterApp/app/src/main/res/layout/new_client_fragment2.xml" value="0.264" />
+        <entry key="..\:/Kotlin work/LomasterApp/app/src/main/res/layout/new_clietn_fragment2.xml" value="0.13541666666666666" />
+        <entry key="..\:/Kotlin work/LomasterApp/app/src/main/res/layout/new_request_fragment.xml" value="0.264" />
+        <entry key="..\:/Kotlin work/LomasterApp/app/src/main/res/layout/old_order_fragment.xml" value="0.4" />
+        <entry key="..\:/Kotlin work/LomasterApp/app/src/main/res/layout/order_payment_fragment.xml" value="0.2" />
+        <entry key="..\:/Kotlin work/LomasterApp/app/src/main/res/layout/picker_date.xml" value="0.264" />
+        <entry key="..\:/Kotlin work/LomasterApp/app/src/main/res/layout/send_message_fragment.xml" value="0.259375" />
+        <entry key="..\:/Kotlin work/LomasterApp/app/src/main/res/layout/send_sms_fragment.xml" value="0.264" />
+        <entry key="..\:/Kotlin work/LomasterApp/app/src/main/res/layout/something_happens_fragment.xml" value="0.264" />
+        <entry key="..\:/Kotlin work/LomasterApp/app/src/main/res/layout/splash_screen_fragment.xml" value="0.259375" />
+        <entry key="..\:/KotlinWork/LomasterApp/app/src/main/res/drawable/button_green_selector.xml" value="0.271875" />
+        <entry key="..\:/KotlinWork/LomasterApp/app/src/main/res/drawable/button_white_selector.xml" value="0.2755208333333333" />
+        <entry key="..\:/KotlinWork/LomasterApp/app/src/main/res/layout/activity_main.xml" value="0.20244565217391305" />
+        <entry key="..\:/KotlinWork/LomasterApp/app/src/main/res/layout/client_fragment.xml" value="0.264" />
+        <entry key="..\:/KotlinWork/LomasterApp/app/src/main/res/layout/list_orders_fragment.xml" value="0.20244565217391305" />
+        <entry key="..\:/KotlinWork/LomasterApp/app/src/main/res/layout/new_client_fragment1.xml" value="0.264" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectResources">
+    <resource url="http://schemas.android.com/apk/res/android" location="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="jbr-17" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.1" />
+      </ProjectState>
+    </option>
   </component>
 </project>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.repair.lomasterapp.authorisation.SendSMSFragment">
+
+    <data>
+        <variable
+            name="SendSMSViewModel"
+            type="com.repair.lomasterapp.authorisation.SendSMSViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/main_background"
+        >
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/sms_content_start"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.05" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/sms_content_Top"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.1" />
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/line1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.95" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@id/sms_content_Top"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/line2"
+            app:srcCompat="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/tv_sms"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="@string/send_sms_title"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_small20"
+            app:layout_constraintBottom_toTopOf="@id/line3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/line2" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/line2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.35" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/line3"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.5" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/line4"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.7" />
+
+        <EditText
+            android:id="@+id/etKodSms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/sms_text"
+            android:fontFamily="@font/roboto_light"
+            android:gravity="center_horizontal|center_vertical"
+            android:hint="@string/maska_kod_sms"
+            android:inputType="textPassword"
+            android:maxLength="4"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_small20"
+            app:layout_constraintEnd_toEndOf="@id/line1"
+            app:layout_constraintStart_toStartOf="@+id/sms_content_start"
+            app:layout_constraintTop_toBottomOf="@+id/line3" />
+
+        <TextView
+            android:id="@+id/tv_error_sms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_light"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="@string/tv_error_sms"
+            android:textColor="@color/cherry"
+            android:textSize="@dimen/font_small20"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toTopOf="@+id/line4"
+            app:layout_constraintEnd_toEndOf="@id/line1"
+            app:layout_constraintStart_toStartOf="@+id/sms_content_start"
+            app:layout_constraintTop_toBottomOf="@+id/etKodSms" />
+
+        <Button
+            android:id="@+id/btn_sms_login"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_green_selector"
+            android:text="@string/coming"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_small15"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toStartOf="@+id/line1"
+            app:layout_constraintStart_toStartOf="@+id/sms_content_start"
+
+            app:layout_constraintTop_toTopOf="@id/line4" />
+
+        <Button
+            android:id="@+id/btn_sms_back"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_white_selector"
+            android:text="@string/back"
+            app:layout_constraintEnd_toStartOf="@+id/line1"
+            app:layout_constraintStart_toStartOf="@+id/sms_content_start"
+            app:layout_constraintTop_toBottomOf="@id/btn_sms_login" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

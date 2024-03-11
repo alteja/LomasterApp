@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="AuthorisationViewModel"
+            type="com.repair.lomasterapp.authorisation.AuthorisationViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/main_background"
+        tools:context="com.repair.lomasterapp.authorisation.AuthorisationFragment">
+
+        <ImageView
+            android:id="@+id/imLogoAuthorisation"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="false"
+            android:scaleType="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/auth_content_Top"
+            app:srcCompat="@drawable/logo" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/auth_content_start"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.05" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/auth_content_end"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.95" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/auth_content_start2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.3" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/auth_content_start3"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.4" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/auth_content_start4"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.55" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/auth_content_start5"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.7" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/auth_content_Top"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.1" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/auth_text_to_top"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.1" />
+
+        <TextView
+            android:id="@+id/textAutor"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:fontFamily="@font/roboto_light"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="@string/title_authorisation"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_middle25"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/auth_content_start2"
+
+            />
+
+        <EditText
+            android:id="@+id/PhoneAuthor1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/phone_part"
+            android:fontFamily="@font/roboto_light"
+            android:gravity="center_vertical|center_horizontal"
+            android:hint="@string/part1NumberPhone"
+            android:inputType="number"
+            android:maxLength="4"
+            android:onTextChanged="@{AuthorisationViewModel.onTextChangedPhone1}"
+            android:text="@string/part1NumberPhone"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_small20"
+            app:layout_constraintStart_toStartOf="@+id/auth_content_start"
+            app:layout_constraintTop_toTopOf="@+id/auth_content_Top"
+            tools:ignore="TextFields" />
+
+        <EditText
+            android:id="@+id/PhoneAuthor2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/margin_view20"
+            android:background="@drawable/phone_part_long"
+            android:fontFamily="@font/roboto_light"
+            android:gravity="left|center_vertical"
+            android:inputType="number"
+            android:maxLength="9"
+            android:onTextChanged="@{AuthorisationViewModel.onTextChangedPhone2}"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_small20"
+            android:text=""
+            android:contentDescription = "@string/title_authorisation"
+            app:layout_constraintTop_toTopOf="@+id/auth_content_Top"
+            tools:ignore="RtlSymmetry,SpeakableTextPresentCheck,TextFields"
+            tools:layout_editor_absoluteX="123dp" />
+
+        <androidx.constraintlayout.helper.widget.Flow
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:constraint_referenced_ids="PhoneAuthor1,PhoneAuthor2"
+            app:flow_horizontalBias="0"
+            app:flow_horizontalGap="@dimen/margin_view5"
+            app:flow_horizontalStyle="packed"
+            app:flow_verticalGap="@dimen/margin_view5"
+            app:flow_verticalStyle="packed"
+            app:flow_wrapMode="chain"
+            app:layout_constraintBottom_toTopOf="@+id/auth_content_start4"
+            app:layout_constraintEnd_toEndOf="@id/auth_content_end"
+            app:layout_constraintStart_toStartOf="@+id/auth_content_start"
+            app:layout_constraintTop_toBottomOf="@+id/auth_content_start3" />
+
+        <Button
+            android:id="@+id/next_author"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_green_selector"
+            android:fontFamily="@font/roboto_medium"
+            android:text="@string/coming"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_small20"
+            app:layout_constraintBottom_toTopOf="@+id/auth_content_start5"
+            app:layout_constraintEnd_toEndOf="@id/auth_content_end"
+            app:layout_constraintStart_toStartOf="@+id/auth_content_start"
+            app:layout_constraintTop_toBottomOf="@+id/auth_content_start4" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

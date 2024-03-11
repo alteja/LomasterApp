@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.repair.lomasterapp.orders.ListOrdersFragment"
+   >
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.repair.lomasterapp.orders.ListOrdersViewModel" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       >
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/content_start"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.03" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/content_end"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.97" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/content_top"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.02" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/content_botton"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.85" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/content_middle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.4" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/line2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.1" />
+
+        <TextView
+            android:id="@+id/tv_requests"
+            style="@style/TextViewCapsStyle"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="@string/tv_my_requests"
+            android:textColor="@color/dark_green"
+            app:layout_constraintBottom_toTopOf="@+id/line2"
+            app:layout_constraintEnd_toEndOf="@id/content_end"
+            app:layout_constraintStart_toStartOf="@+id/content_start"
+            app:layout_constraintTop_toTopOf="@+id/content_top" />
+
+        <com.mikhaellopez.circularprogressbar.CircularProgressBar
+            android:id="@+id/pb_list_orders"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toTopOf="@+id/btn_list_request_back"
+            app:layout_constraintEnd_toEndOf="@id/content_end"
+            app:layout_constraintStart_toStartOf="@+id/content_start"
+            app:layout_constraintTop_toTopOf="@id/content_top" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_list_requests"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintBottom_toBottomOf="@+id/content_botton"
+            app:layout_constraintEnd_toEndOf="@id/content_end"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/content_start"
+            app:layout_constraintTop_toTopOf="@+id/line2"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <Button
+            android:id="@+id/btn_list_request_back"
+            style="@style/TextButtonStyleWhite"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_green_selector"
+            android:text="@string/back"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/content_end"
+            app:layout_constraintStart_toStartOf="@+id/content_start"
+            app:layout_constraintTop_toTopOf="@id/content_botton" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

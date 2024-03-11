@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="NewClientViewModel"
+            type="com.repair.lomasterapp.clients.NewClientViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/main_background"
+        tools:context="com.repair.lomasterapp.clients.NewClientInformationFragment">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/new_client_content_start"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.05" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/new_client_content_Top"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.1" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/new_client_content_End"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.95" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/new_client_content_Botton"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.9" />
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/line1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.2" />
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/line2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.6" />
+
+        <TextView
+            android:id="@+id/tv_add_personal_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="@string/add_personal_data"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_small20"
+            app:layout_constraintEnd_toEndOf="@id/new_client_content_End"
+            app:layout_constraintStart_toStartOf="@id/new_client_content_start"
+            app:layout_constraintTop_toBottomOf="@id/new_client_content_Top" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TextViewStyle2"
+            android:text="@string/add_personal_data_registration"
+            app:layout_constraintBottom_toTopOf="@id/line1"
+            app:layout_constraintEnd_toEndOf="@id/new_client_content_End"
+            app:layout_constraintStart_toStartOf="@id/new_client_content_start"
+            app:layout_constraintTop_toBottomOf="@id/tv_add_personal_data" />
+
+        <androidx.constraintlayout.helper.widget.Flow
+            android:id="@+id/flow_new_client1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:constraint_referenced_ids="et_first_name,et_name,et_sername"
+            app:flow_horizontalBias="0"
+            app:flow_horizontalStyle="spread"
+            app:flow_verticalGap="@dimen/margin_view20"
+            app:flow_verticalStyle="spread"
+            app:flow_wrapMode="chain"
+            app:layout_constraintBottom_toTopOf="@+id/line2"
+            app:layout_constraintEnd_toEndOf="@id/new_client_content_End"
+            app:layout_constraintStart_toStartOf="@id/new_client_content_start"
+            app:layout_constraintTop_toBottomOf="@id/line1" />
+
+        <EditText
+            android:id="@+id/et_first_name"
+            android:ems="10"
+            android:background="@drawable/edit_text"
+            android:hint="@string/first_name"
+            android:inputType="textPersonName"
+            android:onTextChanged="@{NewClientViewModel.onTextChangedFirstNameClient}"
+            style="@style/EditTextStyleClient2"
+            app:layout_constraintBottom_toTopOf="@+id/et_name"
+            app:layout_constraintEnd_toEndOf="@id/new_client_content_End"
+            app:layout_constraintStart_toStartOf="@id/new_client_content_start"
+            app:layout_constraintTop_toBottomOf="@id/line1" />
+
+        <EditText
+            android:id="@+id/et_name"
+            style="@style/EditTextStyleClient2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text"
+            android:ems="10"
+            android:hint="@string/client_name"
+            android:inputType="textPersonName"
+            android:onTextChanged="@{NewClientViewModel.onTextChangedNameClient}"
+            app:layout_constraintBottom_toTopOf="@+id/et_sername"
+            app:layout_constraintEnd_toEndOf="@id/new_client_content_End"
+            app:layout_constraintStart_toStartOf="@id/new_client_content_start"
+            app:layout_constraintTop_toBottomOf="@id/et_first_name" />
+
+        <EditText
+            android:id="@+id/et_sername"
+            style="@style/EditTextStyleClient2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text"
+            android:ems="10"
+            android:hint="@string/client_sername"
+            android:inputType="textPersonName"
+            android:onTextChanged="@{NewClientViewModel.onTextChangedSecondNameClient}"
+            app:layout_constraintBottom_toTopOf="@id/line2"
+            app:layout_constraintEnd_toEndOf="@id/new_client_content_End"
+            app:layout_constraintStart_toStartOf="@id/new_client_content_start"
+            app:layout_constraintTop_toBottomOf="@id/et_name" />
+
+        <Button
+            android:id="@+id/btn_next"
+            style="@style/TextButtonStyleWhite"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_green_selector"
+            android:text="@string/next"
+            app:layout_constraintEnd_toEndOf="@id/new_client_content_End"
+            app:layout_constraintStart_toStartOf="@id/new_client_content_start"
+            app:layout_constraintTop_toBottomOf="@id/line2" />
+
+        <Button
+            android:id="@+id/btn_back"
+            style="@style/TextButtonStyleBlack"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_white_selector"
+            android:text="@string/back"
+            app:layout_constraintEnd_toEndOf="@id/new_client_content_End"
+            app:layout_constraintStart_toStartOf="@id/new_client_content_start"
+            app:layout_constraintTop_toBottomOf="@id/btn_next" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

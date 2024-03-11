@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.repair.lomasterapp.presentation.contacts_company.CompanyContactsFragment">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/contacts_company_start"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.05" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/contacts_company_start2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.2" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/contacts_company_Top"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.05" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/contacts_company_End"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.95" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/contacts_company_Botton"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.8" />
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/line1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.2" />
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/line"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.1" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/line11"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.25" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/line12"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.3" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/line2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.35" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/line5"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.45" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/line3"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.55" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/line6"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.65" />
+
+        <TextView
+            android:id="@+id/tv_connect_us"
+            style="@style/TextViewCapsStyle"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="@string/tv_connect_us"
+            android:textColor="@color/dark_green"
+            app:layout_constraintBottom_toTopOf="@+id/line"
+            app:layout_constraintEnd_toStartOf="@+id/contacts_company_End"
+            app:layout_constraintStart_toStartOf="@+id/contacts_company_start"
+            app:layout_constraintTop_toTopOf="@+id/contacts_company_Top" />
+
+        <TextView
+            android:id="@+id/tv_our_contacts"
+            style="@style/TextViewCapsStyle"
+            android:text="@string/contacts_tv"
+            app:layout_constraintBottom_toTopOf="@id/tv_number_phone_company1"
+            app:layout_constraintStart_toStartOf="@id/contacts_company_start"
+            app:layout_constraintTop_toBottomOf="@id/line" />
+
+        <ImageButton
+            android:id="@+id/im_phone1_company"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00FFFFFF"
+            android:clickable="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/vodafone_icon"
+            app:layout_constraintBottom_toTopOf="@+id/line11"
+            app:layout_constraintEnd_toStartOf="@id/contacts_company_start2"
+            app:layout_constraintStart_toStartOf="@id/contacts_company_start"
+            app:layout_constraintTop_toBottomOf="@id/line1" />
+
+        <TextView
+            android:id="@+id/tv_number_phone_company1"
+            style="@style/TextViewStyleContacts"
+            android:text="@string/phone_company1"
+            app:layout_constraintBottom_toTopOf="@+id/line11"
+            app:layout_constraintEnd_toEndOf="@id/contacts_company_End"
+            app:layout_constraintStart_toEndOf="@id/contacts_company_start2"
+            app:layout_constraintTop_toBottomOf="@id/line1" />
+
+        <ImageButton
+            android:id="@+id/im_phone2_company"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00FFFFFF"
+            android:clickable="true"
+            android:src="@drawable/kievstar_icon"
+            app:layout_constraintBottom_toTopOf="@id/line12"
+            app:layout_constraintEnd_toStartOf="@id/contacts_company_start2"
+            app:layout_constraintStart_toStartOf="@id/contacts_company_start"
+            app:layout_constraintTop_toBottomOf="@id/line11" />
+
+        <TextView
+            android:id="@+id/tv_number_phone_company2"
+            style="@style/TextViewStyleContacts"
+            android:text="@string/phone_company2"
+            app:layout_constraintBottom_toTopOf="@id/line12"
+            app:layout_constraintEnd_toEndOf="@id/contacts_company_End"
+            app:layout_constraintStart_toEndOf="@id/contacts_company_start2"
+            app:layout_constraintTop_toBottomOf="@id/line11" />
+
+        <ImageButton
+            android:id="@+id/im_phone3_company"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00FFFFFF"
+            android:clickable="true"
+            android:src="@drawable/phone_operator_icon"
+            app:layout_constraintBottom_toTopOf="@id/line2"
+            app:layout_constraintEnd_toStartOf="@id/contacts_company_start2"
+            app:layout_constraintStart_toStartOf="@id/contacts_company_start"
+            app:layout_constraintTop_toBottomOf="@id/line12" />
+
+        <TextView
+            android:id="@+id/tv_number_phone_company3"
+            style="@style/TextViewStyleContacts"
+            android:text="@string/phone_company3"
+            app:layout_constraintBottom_toTopOf="@id/line2"
+            app:layout_constraintEnd_toEndOf="@id/contacts_company_End"
+            app:layout_constraintStart_toEndOf="@id/contacts_company_start2"
+            app:layout_constraintTop_toBottomOf="@id/line12" />
+
+        <TextView
+            android:id="@+id/tv_time_working"
+            style="@style/TextViewCapsStyle"
+            android:text="@string/tv_time_working"
+            app:layout_constraintBottom_toTopOf="@id/line5"
+            app:layout_constraintStart_toStartOf="@id/contacts_company_start"
+            app:layout_constraintTop_toBottomOf="@id/line2" />
+
+        <ImageView
+            android:id="@+id/im_working_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00FFFFFF"
+            app:layout_constraintBottom_toTopOf="@+id/line3"
+            app:layout_constraintEnd_toStartOf="@id/contacts_company_start2"
+            app:layout_constraintStart_toStartOf="@id/contacts_company_start"
+            app:layout_constraintTop_toTopOf="@+id/line5"
+            app:srcCompat="@drawable/bx_time" />
+
+        <TextView
+            android:id="@+id/tv_time_working_ifo"
+            style="@style/TextViewStyleContacts"
+            android:text="@string/tv_time_working_info"
+            app:layout_constraintBottom_toTopOf="@id/line3"
+            app:layout_constraintEnd_toEndOf="@id/contacts_company_End"
+            app:layout_constraintStart_toStartOf="@id/contacts_company_start2"
+            app:layout_constraintTop_toTopOf="@+id/line5" />
+
+        <TextView
+            android:id="@+id/tv_address_company"
+            style="@style/TextViewCapsStyle"
+            android:text="@string/tv_address_contacts"
+            app:layout_constraintBottom_toTopOf="@+id/line6"
+            app:layout_constraintStart_toStartOf="@id/contacts_company_start"
+            app:layout_constraintTop_toBottomOf="@id/line3" />
+
+        <ImageView
+            android:id="@+id/im_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/location_icon"
+            app:layout_constraintBottom_toTopOf="@id/contacts_company_Botton"
+            app:layout_constraintEnd_toEndOf="@id/contacts_company_start2"
+            app:layout_constraintStart_toStartOf="@id/contacts_company_start"
+            app:layout_constraintTop_toBottomOf="@id/line6"/>
+
+        <TextView
+            android:id="@+id/tv_address_company_info"
+            style="@style/TextViewStyleContacts"
+            android:text="@string/tv_address_contacts_info"
+            app:layout_constraintBottom_toTopOf="@id/contacts_company_Botton"
+            app:layout_constraintEnd_toEndOf="@id/contacts_company_End"
+            app:layout_constraintStart_toStartOf="@id/contacts_company_start2"
+            app:layout_constraintTop_toBottomOf="@id/line6" />
+
+        <Button
+            android:id="@+id/btn_next_company"
+            style="@style/TextButtonStyleWhite"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_green_selector"
+            android:text="@string/back"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/contacts_company_End"
+            app:layout_constraintStart_toStartOf="@id/contacts_company_start"
+            app:layout_constraintTop_toBottomOf="@id/contacts_company_Botton" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
